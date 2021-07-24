@@ -13,6 +13,6 @@ app.use(bodyParser.urlencoded({extended: true}));
 //route config
 require("./app/routes/logs.routes")(app);
 
-app.listen(80, () => {
+app.listen(3000, () => {
     console.log("Training Log Server Running...");
 });
