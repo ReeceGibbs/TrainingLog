@@ -37,11 +37,11 @@ exports.createLog = (req, res) => {
     }
 
     //get date and time in mysql format
-    const dateAndTime = new Date().toLocaleString().replace(/\//g, "-").replace(/,/g, "");
+    //const dateAndTime = new Date().toLocaleString().replace(/\//g, "-").replace(/,/g, "");
 
     const log = new Log({
 
-        date: dateAndTime,
+        date: req.body.date,
         exercise: req.body.exercise,
         sets: req.body.sets,
         reps: req.body.reps,
